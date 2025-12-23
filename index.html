@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Injection Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Estilo simples e profissional -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #0b3c5d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 25px;
+      margin: 15px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #0b3c5d;
+      margin-top: 0;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+      background: #0b3c5d;
+      color: white;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #145a86;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Injection Hub</h1>
+  <p>Maintenance • Knowledge • Control</p>
+</header>
+
+<!-- HOME -->
+<section id="home">
+  <h2>Bem-vindo / Welcome</h2>
+  <p>
+    PT: Bem-vindo ao Injection Hub!  
+    <br>
+    EN: Welcome to Injection Hub!
+  </p>
+
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfflyAFCslO6oDbxJwyhRNmtkCd2VIOz-XFjNtIbhaITWrTBA/viewform?usp=header">Agendar Manutenção</a>
+  <a class="btn" href="#moldmastery">Mold Mastery</a>
+  <a class="btn" href="#historico">Meu Histórico</a>
+  <a class="btn" href="#perfil">Perfil / Configurações</a>
+</section>
+
+<!-- AGENDAMENTO -->
+<section id="agendamento">
+  <h2>Agendar Manutenção</h2>
+
+  <!-- Pode ligar isto a Google Forms depois -->
+  <form>
+    <label>Tipo de Serviço</label>
+    <select>
+      <option>Manutenção Preventiva</option>
+      <option>Reparo</option>
+      <option>Consultoria</option>
+    </select>
+
+    <label>Data e Hora</label>
+    <input type="datetime-local">
+
+    <label>Observações</label>
+    <textarea rows="4" placeholder="Descreva o problema ou molde"></textarea>
+
+    <a class="btn" href="#">Confirmar Agendamento</a>
+  </form>
+
+  <p><strong>Mensagem:</strong><br>
+    PT: Agendamento confirmado! Você receberá um lembrete por e-mail.<br>
+    EN: Appointment confirmed! You will receive a reminder by email.
+  </p>
+</section>
+
+<!-- MOLD MASTERY -->
+<section id="moldmastery">
+  <h2>Mold Mastery</h2>
+
+  <h3>🎥 Vídeos Educativos</h3>
+  <p>Tutoriais, dicas práticas e erros comuns em moldes de injeção.</p>
+  <a class="btn" href="#">Ver Vídeos</a>
+
+  <h3>📘 E-books & Checklists</h3>
+  <p>Conteúdo técnico gratuito e premium.</p>
+  <a class="btn" href="#">Download E-books</a>
+
+  <h3>🧠 Quiz / Checklist</h3>
+  <p>Teste os seus conhecimentos técnicos.</p>
+  <a class="btn" href="#">Iniciar Quiz</a>
+
+  <a class="btn" href="#">Assinar Premium</a>
+</section>
+
+<!-- HISTÓRICO -->
+<section id="historico">
+  <h2>Meu Histórico</h2>
+
+  <p><strong>Exemplo de registo:</strong></p>
+  <ul>
+    <li>Molde: Tampa PP Ø120</li>
+    <li>Data: 12/09/2025</li>
+    <li>Serviço: Manutenção preventiva</li>
+    <li>Horas: 3h</li>
+    <li>Observações: Limpeza hot runner</li>
+  </ul>
+
+  <a class="btn" href="#">Compartilhar Relatório</a>
+</section>
+
+<!-- PERFIL -->
+<section id="perfil">
+  <h2>Perfil / Configurações</h2>
+
+  <label>Nome</label>
+  <input type="text" placeholder="Seu nome">
+
+  <label>Email</label>
+  <input type="email" placeholder="seu@email.com">
+
+  <label>Empresa</label>
+  <input type="text" placeholder="Nome da empresa">
+
+  <label>Idioma</label>
+  <select>
+    <option>Português</option>
+    <option>English</option>
+  </select>
+
+  <a class="btn" href="#">Salvar Alterações</a>
+  <a class="btn" href="#">Sair</a>
+</section>
+
+<footer>
+  © Injection Hub – Sérgio Ferreira
+</footer>
+
+</body>
+</html>
