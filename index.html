@@ -1,184 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Injection Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Injection Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Estilo simples e profissional -->
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      background: #f4f6f8;
-      color: #333;
-    }
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+  }
 
-    header {
-      background: #0b3c5d;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+  header {
+    background: #0b3c5d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
 
-    section {
-      padding: 25px;
-      margin: 15px;
-      background: white;
-      border-radius: 8px;
-    }
+  section {
+    display: none;
+    padding: 20px;
+    background: white;
+    margin: 15px;
+    border-radius: 8px;
+  }
 
-    h2 {
-      color: #0b3c5d;
-      margin-top: 0;
-    }
+  #home {
+    display: block;
+  }
 
-    .btn {
-      display: block;
-      text-align: center;
-      background: #0b3c5d;
-      color: white;
-      padding: 14px;
-      margin: 10px 0;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background: #145a86;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 8px;
-      margin-bottom: 15px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+  button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 14px;
+    background: #0b3c5d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>Injection Hub</h1>
-  <p>Maintenance • Knowledge • Control</p>
 </header>
 
-<!-- HOME -->
 <section id="home">
-  <h2>Bem-vindo / Welcome</h2>
+  <h2>Injection Hub</h2>
   <p>
-    PT: Bem-vindo ao Injection Hub!  
-    <br>
-    EN: Welcome to Injection Hub!
+    PT: Central de pedidos de manutenção de moldes de injeção.<br>
+    EN: Injection mold maintenance request hub.
   </p>
 
-  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfflyAFCslO6oDbxJwyhRNmtkCd2VIOz-XFjNtIbhaITWrTBA/viewform?usp=header">Agendar Manutenção</a>
-  <a class="btn" href="#moldmastery">Mold Mastery</a>
-  <a class="btn" href="#historico">Meu Histórico</a>
-  <a class="btn" href="#perfil">Perfil / Configurações</a>
+  <button onclick="show('agendamento')">Agendar Manutenção</button>
+  <button onclick="show('moldmastery')">Mold Mastery</button>
+  <button onclick="show('historico')">Meu Histórico</button>
+  <button onclick="show('perfil')">Perfil / Configurações</button>
 </section>
-
-<!-- AGENDAMENTO -->
 <section id="agendamento">
   <h2>Agendar Manutenção</h2>
 
-  <!-- Pode ligar isto a Google Forms depois -->
-  <form>
-    <label>Tipo de Serviço</label>
-    <select>
-      <option>Manutenção Preventiva</option>
-      <option>Reparo</option>
-      <option>Consultoria</option>
-    </select>
-
-    <label>Data e Hora</label>
-    <input type="datetime-local">
-
-    <label>Observações</label>
-    <textarea rows="4" placeholder="Descreva o problema ou molde"></textarea>
-
-    <a class="btn" href="#">Confirmar Agendamento</a>
-  </form>
-
-  <p><strong>Mensagem:</strong><br>
-    PT: Agendamento confirmado! Você receberá um lembrete por e-mail.<br>
-    EN: Appointment confirmed! You will receive a reminder by email.
+  <p>
+    PT: Utilize o formulário para solicitar um serviço de manutenção.<br>
+    EN: Use the form to request a maintenance service.
   </p>
+
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfflyAFCslO6oDbxJwyhRNmtkCd2VIOz-XFjNtIbhaITWrTBA/viewform?usp=sharing&ouid=110803028487730974454" target="_blank">
+    Abrir Formulário de Manutenção
+  </a>
+
+  <button onclick="show('home')">Voltar</button>
 </section>
 
-<!-- MOLD MASTERY -->
 <section id="moldmastery">
   <h2>Mold Mastery</h2>
 
-  <h3>🎥 Vídeos Educativos</h3>
-  <p>Tutoriais, dicas práticas e erros comuns em moldes de injeção.</p>
-  <a class="btn" href="#">Ver Vídeos</a>
+  <p>
+    PT: Conteúdo educativo sobre manutenção e otimização de moldes.<br>
+    EN: Educational content about mold maintenance and optimization.
+  </p>
 
-  <h3>📘 E-books & Checklists</h3>
-  <p>Conteúdo técnico gratuito e premium.</p>
-  <a class="btn" href="#">Download E-books</a>
-
-  <h3>🧠 Quiz / Checklist</h3>
-  <p>Teste os seus conhecimentos técnicos.</p>
-  <a class="btn" href="#">Iniciar Quiz</a>
-
-  <a class="btn" href="#">Assinar Premium</a>
+  <button onclick="show('home')">Voltar</button>
 </section>
-
-<!-- HISTÓRICO -->
 <section id="historico">
   <h2>Meu Histórico</h2>
 
-  <p><strong>Exemplo de registo:</strong></p>
-  <ul>
-    <li>Molde: Tampa PP Ø120</li>
-    <li>Data: 12/09/2025</li>
-    <li>Serviço: Manutenção preventiva</li>
-    <li>Horas: 3h</li>
-    <li>Observações: Limpeza hot runner</li>
-  </ul>
+  <p>
+    PT: Aqui ficará o histórico dos pedidos realizados.<br>
+    EN: Your maintenance request history will appear here.
+  </p>
 
-  <a class="btn" href="#">Compartilhar Relatório</a>
+  <button onclick="show('home')">Voltar</button>
 </section>
 
-<!-- PERFIL -->
 <section id="perfil">
   <h2>Perfil / Configurações</h2>
 
-  <label>Nome</label>
-  <input type="text" placeholder="Seu nome">
+  <p>
+    PT: Configurações básicas do utilizador.<br>
+    EN: Basic user settings.
+  </p>
 
-  <label>Email</label>
-  <input type="email" placeholder="seu@email.com">
-
-  <label>Empresa</label>
-  <input type="text" placeholder="Nome da empresa">
-
-  <label>Idioma</label>
-  <select>
-    <option>Português</option>
-    <option>English</option>
-  </select>
-
-  <a class="btn" href="#">Salvar Alterações</a>
-  <a class="btn" href="#">Sair</a>
+  <button onclick="show('home')">Voltar</button>
 </section>
 
-<footer>
-  © Injection Hub – Sérgio Ferreira
-</footer>
+<script>
+  function show(id) {
+    document.querySelectorAll("section").forEach(s => s.style.display = "none");
+    document.getElementById(id).style.display = "block";
+  }
+</script>
 
 </body>
 </html>
