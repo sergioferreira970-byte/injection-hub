@@ -59,10 +59,25 @@
     EN: Injection mold maintenance request hub.
   </p>
 
-  <button onclick="show('agendamento')">Agendar Manutenção</button>
-  <button onclick="show('moldmastery')">Mold Mastery</button>
-  <button onclick="show('historico')">Meu Histórico</button>
-  <button onclick="show('perfil')">Perfil / Configurações</button>
+ <button onclick="show('agendamento')">
+  Agendar Manutenção<br>
+  <small>Maintenance Request</small>
+</button>
+
+<button onclick="show('moldmastery')">
+  Mold Mastery<br>
+  <small>Educational Content</small>
+</button>
+
+<button onclick="show('historico')">
+  Meu Histórico<br>
+  <small>My History</small>
+</button>
+
+<button onclick="show('perfil')">
+  Perfil / Configurações<br>
+  <small>Profile / Settings</small>
+</button>
 </section>
 <section id="agendamento">
   <h2>Agendar Manutenção</h2>
@@ -73,10 +88,12 @@
   </p>
 
   <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfflyAFCslO6oDbxJwyhRNmtkCd2VIOz-XFjNtIbhaITWrTBA/viewform?usp=sharing&ouid=110803028487730974454" target="_blank">
-    Abrir Formulário de Manutenção
-  </a>
+    Abrir Formulário de Manutenção<br>
+  <small>Open Maintenance Request Form</small>
+</a>
+  
 
-  <button onclick="show('home')">Voltar</button>
+  <button onclick="show('home')">Voltar/Back</button>
 </section>
 
 <section id="moldmastery">
@@ -95,7 +112,7 @@
     EN: Educational content about mold maintenance and optimization.
   </p>
 
-  <button onclick="show('home')">Voltar</button>
+  <button onclick="show('home')">Voltar/Back</button>
 </section>
 <section id="historico">
   <h2>Meu Histórico</h2>
@@ -105,20 +122,67 @@
     EN: Your maintenance request history will appear here.
   </p>
 
-  <button onclick="show('home')">Voltar</button>
+  <button onclick="show('home')">Voltar/Back</button>
 </section>
 
 <section id="perfil">
-  <h2>Perfil / Configurações</h2>
+  <h2>
+    Perfil / Settings<br>
+    <small>Injection Mold Care</small>
+  </h2>
 
   <p>
-    PT: Configurações básicas do utilizador.<br>
-    EN: Basic user settings.
+    <strong>Manutenção especializada de moldes de injeção</strong><br>
+    <em>Specialized injection mold maintenance</em>
   </p>
 
-  <button onclick="show('home')">Voltar</button>
-</section>
+  <hr>
 
+  <p>
+    <strong>PT</strong><br>
+    Com mais de 30 anos de experiência na indústria de moldes de injeção,
+    a Injection Mold Care presta serviços especializados de manutenção,
+    diagnóstico técnico e otimização de moldes, diretamente nas instalações do cliente.<br><br>
+
+    O foco é garantir maior vida útil dos moldes, estabilidade do processo
+    e redução de custos não planeados.
+  </p>
+
+  <p>
+    <strong>EN</strong><br>
+    With more than 30 years of experience in the injection mold industry,
+    Injection Mold Care provides specialized maintenance services,
+    technical diagnostics and mold optimization, directly on-site.<br><br>
+
+    The focus is to extend mold lifetime, stabilize production
+    and reduce unplanned costs.
+  </p>
+
+  <hr>
+
+  <p>
+    <strong>Serviços disponíveis / Available services</strong><br>
+    • Manutenção preventiva / Preventive maintenance<br>
+    • Manutenção corretiva / Corrective maintenance<br>
+    • Diagnóstico técnico / Technical diagnostics<br>
+    • Otimização de moldes / Mold optimization
+  </p>
+
+  <p>
+    <strong>Zona de atuação / Service area</strong><br>
+    Holanda e Europa (mediante acordo)<br>
+    Netherlands and Europe (upon agreement)
+  </p>
+
+  <p>
+    <strong>Contacto / Contact</strong><br>
+    Pedidos de manutenção através desta app<br>
+    <em>Maintenance requests via this app</em><br><br>
+    🌐 www.injectionmoldcare.com
+  </p>
+
+  <button onclick="show('home')">Voltar/Back</button>
+</section>
 <script>
   function show(id) {
     document.querySelectorAll("section").forEach(s => s.style.display = "none");
